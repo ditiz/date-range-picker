@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.dateRangePicker {
+    width: 80%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.dateRangePicker::before {
+    content: '';
+    width: 80%;
+    height: 2rem;
+    background: #f9dc5c;
+    display: flex;
+    border-radius: 5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.dateRangePicker::after {
+    content: '';
+    height: 3.5rem;
+    width: 1rem;
+    background: #c21f40;
+    z-index: 10;
+    border-radius: 5rem;
+}
+
+.selector {
+    height: 3rem;
+    width: 3rem;
+    background: #011936;
+    z-index: 20;
+    border-radius: 5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#first {
+    left: 40%;
+}
+
+#last {
+    left: 70%;
+}
+
+.indicator {
+    height: 2rem;
+    width: 10rem;
+    background: #f2eaec;
+    position: absolute;
+    top: -120%;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 60px #cec7c9, -20px -20px 60px #ffffff;
+}
+
+.indicator input {
+    width: 3rem;
+}
+
+#range {
+    z-index: 1;
+    height: 2rem;
+    background: blue;
+    opacity: 0.7;
+    width: 3rem;
+    position: absolute;
+    border-radius: 5rem;
+}
